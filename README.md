@@ -1,35 +1,89 @@
-
 # NovaAI 🤖
 
-NovaAI is an AI-powered chatbot built with React and the Google Gemini API.
+NovaAI is a web-based AI chatbot built with **React.js** that provides an interactive conversational interface and integrates external AI APIs for generating responses and AI-powered functionality.
 
-## Features
+The project focuses on building a responsive chatbot experience using React, API integration, asynchronous JavaScript, and client-side state management.
 
-- 💬 AI Chat
-- 🖼️ Image Upload
-- ⚛️ React Context API
-- 📁 FileReader for image processing
-- 🔄 Async API communication
-- 📱 Responsive UI
+---
 
-## Tech Stack
+## ✨ Features
 
-- React
+- 💬 AI-powered chat interface
+- 🖼️ Image upload support
+- 🤖 AI response generation through API integration
+- ⚛️ React Context API for shared state management
+- 📁 Client-side image processing using the FileReader API
+- 🔄 Asynchronous API communication
+- ⏳ Loading states while waiting for API responses
+- 📱 Responsive user interface
+- 🎨 Interactive chat experience
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
 - JavaScript
 - HTML
 - CSS
+
+### API & Browser Technologies
+
 - Google Gemini API
 - Fetch API
+- FileReader API
 
-## Project Status
+### Development Tools
 
-🚧 This project is currently under development.
+- Vite
+- ESLint
+- Git
+- GitHub
 
-### Planned Features
+---
 
-- Image Generation
-- Chat History
-- Better Error Handling
-- Markdown Rendering
-- Dark Mode
->>>>>>> f253d13b725a9e3e690a5484d435958a113f75fe
+## 🏗️ Architecture
+
+NovaAI follows a client-side React architecture.
+
+```text
+                    ┌─────────────────┐
+                    │      User       │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │    React UI     │
+                    │   Components    │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ React Context   │
+                    │ State Management│
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ Request Handler │
+                    │   / API Logic   │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │  External AI    │
+                    │      API        │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ API Response    │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ React UI        │
+                    │ Displays Result  │
+                    └─────────────────┘
